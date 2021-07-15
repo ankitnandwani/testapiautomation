@@ -1,0 +1,23 @@
+##############################
+#Spring Congig
+##############################
+spring:
+  profiles:
+    active: Test
+
+
+---
+##########################################################
+#
+#
+#   Test Profile
+#
+#
+##########################################################
+spring:
+  profiles: Test
+  main:
+    lazy-initialization: true
+
+restapi:
+  baseUrl: http://localhost:8080/api
